@@ -1,3 +1,5 @@
+### 1st Private Label News edit
+
 ###Lobsters Rails Project
 
 This is the source code to the site operating at
@@ -25,7 +27,7 @@ and 2.3.0.
 
          $ git clone git://github.com/jcs/lobsters.git
          $ cd lobsters
-         lobsters$ 
+         lobsters$
 
 * Run Bundler to install/bundle gems needed by the project:
 
@@ -43,7 +45,7 @@ MariaDB have been tested) database, username, and password and put them in a
             socket: /tmp/mysql.sock
             username: *username*
             password: *password*
-            
+
           test:
             adapter: sqlite3
             database: db/test.sqlite3
@@ -71,12 +73,12 @@ in a `config/initializers/production.rb` or similar file:
             def domain
               "example.com"
             end
-          
+
             def name
               "Example News"
             end
           end
-          
+
           Rails.application.routes.default_url_options[:host] = Rails.application.domain
 
 * Put your site's custom CSS in `app/assets/stylesheets/local`.
