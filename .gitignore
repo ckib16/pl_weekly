@@ -36,3 +36,6 @@ config/unicorn.conf.rb
 
 # ME: Removed this one so Heroku could read app name & domain
 # config/initializers/production.rb
+
+# ME: Rails ERD PDFs
+erd.pdf
