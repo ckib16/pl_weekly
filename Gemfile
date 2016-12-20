@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "bcrypt", "~> 3.1.2"
 gem "dynamic_form"
 gem "exception_notification"
+gem "figaro"
 gem "htmlentities"
 gem "jquery-rails"
 # for parsing incoming mail

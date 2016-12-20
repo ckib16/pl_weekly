@@ -40,6 +40,8 @@ GEM
     execjs (2.2.1)
     faker (1.4.2)
       i18n (~> 0.5)
+    figaro (1.1.1)
+      thor (~> 0.14)
     htmlentities (4.3.4)
     i18n (0.7.0)
     innertube (1.1.0)
@@ -141,6 +143,7 @@ DEPENDENCIES
   dynamic_form
   exception_notification
   faker
+  figaro
   htmlentities
   jquery-rails
   machinist
