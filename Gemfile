@@ -8,6 +8,7 @@ gem "jquery-rails"
 # for parsing incoming mail
 gem "mail"
 gem "mysql2", ">= 0.3.14"
+gem "newrelic_rpm"
 gem "nokogiri", "= 1.6.1"
 # for twitter-posting bot
 gem "oauth"
