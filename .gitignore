@@ -39,3 +39,6 @@ config/unicorn.conf.rb
 
 # ME: Rails ERD PDFs
 erd.pdf
+
+# Ignore application configuration
+/config/application.yml
