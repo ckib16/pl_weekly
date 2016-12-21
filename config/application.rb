@@ -70,3 +70,8 @@ class << Rails.application
 end
 
 require "#{Rails.root}/lib/monkey"
+
+# Sentry.io configuration
+Raven.configure do |config|
+  config.dsn = 'https://65b11c12b3794b6587b6a8355df63ea0:2c27c34aa7b44c038a2a24a9c5678bff@sentry.io/123532'
+end

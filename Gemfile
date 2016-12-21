@@ -22,6 +22,7 @@ gem "puma"
 gem "rack-timeout"
 gem "rails", "4.1.12"
 gem "rdiscount"
+gem "sentry-raven"
 gem "thinking-sphinx", "~> 3.1.2"
 gem "uglifier", ">= 1.3.0"
 # gem "unicorn"  # Changed to Puma (Heroku Recommended)

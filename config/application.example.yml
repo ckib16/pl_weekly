@@ -1,0 +1,14 @@
+# An examples of keys that need to be set
+# Use Figaro gem to store keys
+# See local repo
+
+NEW_RELIC_LICENSE_KEY:
+
+  development:
+    secret_key_base:
+
+  test:
+    secret_key_base:
+
+  production:
+    secret_key_base:
