@@ -2,13 +2,15 @@
 # Use Figaro gem to store keys
 # See local repo
 
+MAILGUN (Multiple Keys):
 NEW_RELIC_LICENSE_KEY:
+SENTRY_KEY:
 
-  development:
-    secret_key_base:
+development:
+  secret_key_base:
 
-  test:
-    secret_key_base:
+test:
+  secret_key_base:
 
-  production:
-    secret_key_base:
+production:
+  secret_key_base:
