@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+ruby '2.3.3'
 
 gem "bcrypt", "~> 3.1.2"
 gem "dynamic_form"
