@@ -5,7 +5,7 @@ class << Rails.application
   end
 
   def name
-    "Private Label News"
+    "Private Label Weekly"
   end
 end
 
