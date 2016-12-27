@@ -5,6 +5,8 @@ gem "bcrypt", "~> 3.1.2"
 gem "dynamic_form"
 gem "exception_notification"
 gem "figaro"
+# for Heroku Flying Sphix integration - 2016-12-26
+gem "flying-sphinx"
 gem "htmlentities"
 gem "jquery-rails"
 # for parsing incoming mail
