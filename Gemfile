@@ -5,8 +5,6 @@ gem "bcrypt", "~> 3.1.2"
 gem "dynamic_form"
 gem "exception_notification"
 gem "figaro"
-# for Heroku Flying Sphix integration - 2016-12-26
-gem "flying-sphinx"
 gem "htmlentities"
 gem "jquery-rails"
 # for parsing incoming mail
@@ -27,6 +25,8 @@ gem "rails", "4.1.12"
 gem "rdiscount"
 gem "sentry-raven"
 gem "thinking-sphinx", "~> 3.1.2"
+# for Heroku Flying Sphix integration - 2016-12-26
+gem "flying-sphinx"
 gem "uglifier", ">= 1.3.0"
 # gem "unicorn"  # Changed to Puma (Heroku Recommended)
 
