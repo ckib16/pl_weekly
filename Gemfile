@@ -42,5 +42,6 @@ group :test, :development do
 end
 
 group :development do
+  gem "pry-rails"
   gem "rails-erd"
 end
