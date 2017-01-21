@@ -32,6 +32,10 @@ gem "uglifier", ">= 1.3.0"
 
 group :production do
   gem "rails_12factor"
+
+  # Add SSL to Heroku thru https://github.com/pixielabs/letsencrypt-rails-heroku
+  gem 'platform-api', github: 'jalada/platform-api', branch: 'master'
+  gem 'letsencrypt-rails-heroku', group: 'production'
 end
 
 group :test, :development do

@@ -39,8 +39,7 @@ Lobsters::Application.configure do
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # 2016-12-26 - set to `false` so can reach normal http pages (not https)
-  config.force_ssl = false
+  config.force_ssl = true
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
@@ -76,4 +75,7 @@ Lobsters::Application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # SSL for Heroku - https://github.com/pixielabs/letsencrypt-rails-heroku#installation
+  config.middleware.insert_before ActionDispatch::SSL, Letsencrypt::Middleware
 end
