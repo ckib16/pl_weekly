@@ -1,6 +1,16 @@
+GIT
+  remote: git://github.com/jalada/platform-api.git
+  revision: 45ddb3c1a7e2c7f85d979c0791db18e99affb237
+  branch: master
+  specs:
+    platform-api (0.8.0)
+      heroics (~> 0.0.17)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    acme-client (0.4.1)
+      faraday (~> 0.9, >= 0.9.1)
     actionmailer (4.1.12)
       actionpack (= 4.1.12)
       actionview (= 4.1.12)
@@ -38,6 +48,7 @@ GEM
     exception_notification (4.0.1)
       actionmailer (>= 3.0.4)
       activesupport (>= 3.0.4)
+    excon (0.54.0)
     execjs (2.2.1)
     faker (1.4.2)
       i18n (~> 0.5)
@@ -51,6 +62,12 @@ GEM
       pusher-client (~> 0.3)
       riddle (>= 1.5.6)
       thinking-sphinx
+    heroics (0.0.17)
+      erubis (~> 2.0)
+      excon
+      moneta
+      multi_json (>= 1.9.2)
+      netrc
     htmlentities (4.3.4)
     i18n (0.7.0)
     innertube (1.1.0)
@@ -60,6 +77,9 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    letsencrypt-rails-heroku (0.3.0)
+      acme-client (~> 0.4.0)
+      platform-api
     machinist (2.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -68,9 +88,11 @@ GEM
     mime-types (2.6.1)
     mini_portile (0.5.3)
     minitest (5.7.0)
+    moneta (0.8.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
     mysql2 (0.3.20)
+    netrc (0.11.0)
     newrelic_rpm (3.17.2.327)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -172,6 +194,7 @@ DEPENDENCIES
   flying-sphinx
   htmlentities
   jquery-rails
+  letsencrypt-rails-heroku
   machinist
   mail
   mysql2 (>= 0.3.14)
@@ -179,6 +202,7 @@ DEPENDENCIES
   nokogiri (= 1.6.1)
   oauth
   pg
+  platform-api!
   pry-rails
   puma
   rack-timeout
