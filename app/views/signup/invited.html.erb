@@ -5,7 +5,7 @@
 
   <%= form_for @new_user, { :url => signup_path,
   :autocomplete => "off" } do |f| %>
-    <%= hidden_field_tag "invitation_code", @invitation.code %>
+  <!-- Removed 1 line here for open signups without invites -->
 
     <p>
     To create a new account, enter your e-mail address and a password.
@@ -16,13 +16,7 @@
 
     <%= error_messages_for(@new_user) %>
 
-    <p>
-    <%= f.label :invitation, "Invited By:", :class => "required" %>
-    <span class="d">
-      <a href="/u/<%= @invitation.user.username %>" target="_blank"><%=
-        @invitation.user.username %></a>
-    </span>
-    </p>
+    <!-- Removed 7 lines here for direct signup, no invites required -->
 
     <p>
     <%= f.label :username, "Username:", :class => "required" %>

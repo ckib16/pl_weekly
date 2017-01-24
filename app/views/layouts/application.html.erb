@@ -74,6 +74,10 @@
             <a href="<%= u %>" <%= u == @cur_url ? raw("class=\"cur_url\"") :
               "" %>><%= v %></a>
           <% end %>
+          <!-- Add signup link in header if user not logged in -->
+          <% if !@user %>
+            <strong><a href="/invitations/open" style="color: green !important;">Sign Up Now</a></strong>
+          <% end %>
         </span>
       </div>
 
@@ -127,6 +131,10 @@
           <a href="/hats/requests"><%= t('.hatrequestlink') %> (<%= hrc %>)</a>
         <% else %>
           <a href="/hats"><%= t('.hatslink') %></a>
+        <% end %>
+        <!-- Add signup link in footer if user not logged in -->
+        <% if @user.blank? %>
+          <a href="/invitations/open">Join PL Weekly</a>
         <% end %>
         <a href="/chat"><%= t('.chatlink') %></a>
         <a href="/privacy"><%= t('.privacylink') %></a>
