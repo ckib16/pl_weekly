@@ -45,7 +45,8 @@
   <div id="wrapper">
     <div id="header">
       <div id="headerleft">
-        <a id="l_holder" style="background-color: #<%= @traffic_color %>;"
+        <!-- Change icon background color to orange -->
+        <a id="l_holder" style="background-color: orange;"
           href="/" title="<%= Rails.application.name %> (Current traffic: <%=
           @traffic.to_i %>)"></a>
 
@@ -74,26 +75,29 @@
             <a href="<%= u %>" <%= u == @cur_url ? raw("class=\"cur_url\"") :
               "" %>><%= v %></a>
           <% end %>
-          <!-- Add signup link in header if user not logged in -->
-          <% if !@user %>
-            <strong><a href="/invitations/open" style="color: green !important;">Sign Up Now</a></strong>
-          <% end %>
         </span>
       </div>
 
       <div id="headerright">
         <span class="headerlinks">
-        <a href="/filters" <%= @cur_url == "/filters" ?
-          raw("class=\"cur_url\"") : "" %>><%= t('.filterslink') %></a>
+
+        <!-- Add Newsletter link in header -->
+        <strong><a href="https://private-label-weekly.ongoodbits.com/" style="color: orange !important;">PLW Newsletter</a></strong>
+
+        <!-- Remove 'Filters' & 'Messages' links -->
+        <!-- <a href="/filters" <%= @cur_url == "/filters" ?
+          raw("class=\"cur_url\"") : "" %>><%= t('.filterslink') %></a> -->
+
         <% if @user %>
-          <% if (count = @user.unread_message_count) > 0 %>
+          <!-- Remove 'Messages' links -->
+          <!-- <% if (count = @user.unread_message_count) > 0 %>
             <a href="/messages" class="new_messages <%= @cur_url == "/messages" ?
               "cur_url" : "" %>"><%= t(".newmessagelink", :count => count)
               %></a>
           <% else %>
             <a href="/messages" <%= @cur_url == "/messages" ?
               raw("class=\"cur_url\"") : "" %>><%= t('.messageslink') %></a>
-          <% end %>
+          <% end %> -->
 
           <a href="/settings" <%= @cur_url == "/settings" ?
             raw("class=\"cur_url\"") : "" %>><%= @user.username %>
@@ -105,6 +109,12 @@
         <% else %>
           <a href="/login"><%= t('.loginlink') %></a>
         <% end %>
+
+        <!-- Add 'Register' link in header if user not logged in -->
+        <% if !@user %>
+          <strong><a href="/invitations/open" style="color: black !important;">Sign Up Now</a></strong>
+        <% end %>
+
         </span>
       </div>
 
@@ -126,18 +136,18 @@
         (iqc = InvitationRequest.verified_count) > 0 %>
           <a href="/invitations"><%= t('.invitationqueuelink') %>(<%= iqc %>)</a>
         <% end %>
-        <% if @user && @user.is_moderator? &&
+
+        <!-- Remove 'Hats' -->
+        <!-- <% if @user && @user.is_moderator? &&
         (hrc = HatRequest.count) > 0 %>
           <a href="/hats/requests"><%= t('.hatrequestlink') %> (<%= hrc %>)</a>
         <% else %>
           <a href="/hats"><%= t('.hatslink') %></a>
-        <% end %>
-        <!-- Add signup link in footer if user not logged in -->
-        <% if @user.blank? %>
-          <a href="/invitations/open">Join PL Weekly</a>
-        <% end %>
-        <a href="/chat"><%= t('.chatlink') %></a>
-        <a href="/privacy"><%= t('.privacylink') %></a>
+        <% end %> -->
+
+        <!-- Remove 'Chat' & 'Privacy' link -->
+        <!-- <a href="/chat"><%= t('.chatlink') %></a> -->
+        <!-- <a href="/privacy"><%= t('.privacylink') %></a> -->
         <a href="/about"><%= t('.aboutlink') %></a>
       </div>
       <div class="clear"></div>
