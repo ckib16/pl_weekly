@@ -119,16 +119,14 @@
       </span>
     </div> -->
 
-    <br>
-
-    <div class="legend">
+    <!-- <div class="legend">
       Private Message Notification Settings
     </div>
 
     <div class="boxline">
       <%= f.label :email_messages, "Receive E-mail:", :class => "required" %>
       <%= f.check_box :email_messages %>
-    </div>
+    </div> -->
 
     <!-- <div class="boxline">
       <%= f.label :pushover_messages, "Receive Pushover Alert:",
@@ -204,6 +202,24 @@
     <br>
     <%= f.submit "Save All Settings" %>
   <% end %>
+
+  <br>
+  <br>
+
+  <div>
+    <strong>Bookmarklet for Easy Story Submission</strong>
+
+    <p>
+    To easily submit a webpage you're viewing, drag this bookmarklet to your bookmark bar:
+    <p>[<a href="javascript:{window.open(%22<%= Rails.application.root_url
+    %>stories/new?url=%22+encodeURIComponent(document.location)+<%
+    %>%22&title=%22+encodeURIComponent(document.title));%20void(0);}<%
+    %>">Submit to <%= Rails.application.name %></a>]
+    </p>
+    <p>
+    When you click on the bookmarklet, you'll be taken to back to the 'Submit Story' page with your viewed page's URL and title already filled out.
+    </p>
+  </div>
 
   <br>
   <br>
