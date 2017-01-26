@@ -60,8 +60,8 @@ class SignupController < ApplicationController
       Countinual.count!("#{Rails.application.shortname}.users.created", "+1")
       Countinual.count!("#{Rails.application.shortname}.users.total",
         User.count)
-
-      return redirect_to "/signup/invite"
+      # Updated path to homepage instead of "/signup/invite" to avoid shoving invite request in face right after signup
+      return redirect_to "/"
     else
       render :action => "invited"
     end
