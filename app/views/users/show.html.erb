@@ -10,9 +10,9 @@
       <%= @showing_user.username %>
     </span>
 
-    <% if @user && @showing_user.is_active? %>
+    <!-- <% if @user && @showing_user.is_active? %>
       (<a href="/messages?to=<%= @showing_user.username %>">Send a Message</a>)
-    <% end %>
+    <% end %> -->
   </div>
 
   <% if @showing_user.is_active? %>
@@ -163,7 +163,7 @@
         <% if v.comment_id %>
           <a href="<%= v.comment.short_id_url %>">comment</a>
           by
-          <a href="/u/<%= v.comment.user.try(:username) %>"><%= 
+          <a href="/u/<%= v.comment.user.try(:username) %>"><%=
             v.comment.user.try(:username) %></a>
           on
           <a href="<%= v.story.short_id_url %>"><%= v.story.title %></a>

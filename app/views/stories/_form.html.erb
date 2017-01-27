@@ -106,7 +106,7 @@
     <div class="boxline">
       <%= f.label :description, "Text:", :class => "required" %>
       <%= f.text_area :description, :rows => 15,
-        :placeholder => "Optional when submitting a URL; please see guidelines",
+        :placeholder => "Optional - please see guidelines. Markdown formatting accepted",
         :autocomplete => "off" %>
     </div>
 
@@ -119,20 +119,11 @@
         <ul>
 
           <li><p>
-          Bookmarklet: to easily submit a webpage you're viewing, drag this bookmarklet to your bookmark bar -
-          [<a href="javascript:{window.open(%22<%= Rails.application.root_url
-          %>stories/new?url=%22+encodeURIComponent(document.location)+<%
-          %>%22&title=%22+encodeURIComponent(document.title));%20void(0);}<%
-          %>">Submit to <%= Rails.application.name %></a>].
-          When you click on the bookmarklet, you'll be taken to back to the 'Submit Story' page with your viewed page's URL and title already filled out.
+          Titles: try not editorialize story titles. But when the original story title has no context or is unclear, please change it. Please remove extraneous items such as the site name or section.
           </p></li>
 
           <li><p>
-          Titles: try not editorialize story titles, but when the original story's title has no context or is unclear, please change it. Please remove extraneous items from titles such as the name of the site or section.
-          </p></li>
-
-          <li><p>
-          Older Stories: when the story being submitted is more than a year or so old, please add the year the story was written to the post title in parentheses.
+          Older Stories: when the story being submitted is more than a year or so old, please add the year the story was written to the post title in parentheses. Ex: This Awesome Post (2015).
           </p></li>
 
           <li><p>
@@ -140,7 +131,16 @@
           </p></li>
 
           <li><p>
-          Text Field: when submitting a URL, the text field is optional and should only be used when additional context or explanation of the URL is needed. Please put your commentary or opinions in a separate comment, so that the comment can be voted on.
+          Text Field: when submitting a URL, the text field is optional and should only be used when additional context or explanation of the URL is needed. Please place your commentary or opinions in a separate comment, so that the comment can be voted on.
+          </p></li>
+
+          <li><p>
+          Bookmarklet: to easily submit a story, drag this bookmarklet to your browser bookmark bar - </br>
+          [<a href="javascript:{window.open(%22<%= Rails.application.root_url
+          %>stories/new?url=%22+encodeURIComponent(document.location)+<%
+          %>%22&title=%22+encodeURIComponent(document.title));%20void(0);}<%
+          %>">Submit to <%= Rails.application.name %></a>] </br>
+          When you click on the bookmarklet, you'll be taken to back to the 'Submit Story' page with the story's URL and title already filled out.
           </p></li>
 
         </ul>
