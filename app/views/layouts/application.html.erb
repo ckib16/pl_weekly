@@ -84,9 +84,8 @@
         <!-- Add Newsletter link in header -->
         <strong><a href="https://private-label-weekly.ongoodbits.com/" style="color: orange !important;">Newsletter</a></strong>
 
-        <!-- Remove 'Filters' & 'Messages' links -->
-        <!-- <a href="/filters" <%= @cur_url == "/filters" ?
-          raw("class=\"cur_url\"") : "" %>><%= t('.filterslink') %></a> -->
+        <a href="/filters" <%= @cur_url == "/filters" ?
+          raw("class=\"cur_url\"") : "" %>><%= t('.filterslink') %></a>
 
         <% if @user %>
           <!-- Remove 'Messages' links -->
