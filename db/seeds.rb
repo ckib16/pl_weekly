@@ -25,9 +25,6 @@ puts "created user: test, password: test"
 # Tag.create(tag: "privileged", description: "privileged tag", privileged: true)
 # Tag.create(tag: "positive hotness", description: "positive hotness tag", hotness_mod: 1)
 # Tag.create(tag: "show", description: "show tag")
-# Tag.create(tag: "test", description: "test tag")
-
-Tag.create(tag: "test", description: "test tag")
 
 Tag.create(tag: "ask", description: "Ask fellow PL Weekly members your questions", hotness_mod: 0.25)
 Tag.create(tag: "show", description: "Show PL Weekly what you've been up to", hotness_mod: 0.5)
