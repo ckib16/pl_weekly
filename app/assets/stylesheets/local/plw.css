@@ -5,6 +5,7 @@
 /* Tag styling*/
 /* UPPER & lowercase work: a.tag_FBA, a.tag_test */
 /* multiple words = just 1st word: for `positive hotness` use a.tag_positive */
+/* Logo colors from http://www.codeofcolors.com/ */
 
 a.tag_ask, a.tag_show {
 	background-color: #34a713;
@@ -12,8 +13,32 @@ a.tag_ask, a.tag_show {
   color: white;
 }
 
-a.tag_test, a.tag_positive, a.tag_FBA {
+a.tag_channels, a.tag_shopify {
 	background-color: #333333;
+  border: none;
+  color: white;
+}
+
+a.tag_amazon {
+	background-color: #ff9900;
+  border: none;
+  color: white;
+}
+
+a.tag_ebay {
+	background-color: #f44242;
+  border: none;
+  color: white;
+}
+
+a.tag_facebook {
+	background-color: #3b5998;
+  border: none;
+  color: white;
+}
+
+a.tag_jet {
+	background-color: #7D43F3;
   border: none;
   color: white;
 }

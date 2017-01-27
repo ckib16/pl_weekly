@@ -46,7 +46,7 @@
     <div id="header">
       <div id="headerleft">
         <!-- Change icon background color to orange -->
-        <a id="l_holder" style="background-color: orange;"
+        <a id="l_holder" style="background-color: #ff9900;"
           href="/" title="<%= Rails.application.name %> (Current traffic: <%=
           @traffic.to_i %>)"></a>
 
@@ -82,7 +82,7 @@
         <span class="headerlinks">
 
         <!-- Add Newsletter link in header -->
-        <strong><a href="https://private-label-weekly.ongoodbits.com/" style="color: orange !important;">Newsletter</a></strong>
+        <strong><a href="https://private-label-weekly.ongoodbits.com/" style="color: #ff9900 !important;">Newsletter</a></strong>
 
         <a href="/filters" <%= @cur_url == "/filters" ?
           raw("class=\"cur_url\"") : "" %>><%= t('.filterslink') %></a>
