@@ -17,7 +17,7 @@ User.create(:username => "test", :email => "test@example.com", :password => "tes
 puts "created user: test, password: test"
 
 # tags
-Tag.create(tag: "ask", description: "show tag")
+Tag.create(tag: "ask", description: "ask tag")
 Tag.create(tag: "inactive", description: "inactive tag", inactive: true)
 Tag.create(tag: "media", description: "media tag", is_media: true)
 Tag.create(tag: "meta", description: "meta tag")
