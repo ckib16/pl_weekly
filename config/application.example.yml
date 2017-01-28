@@ -14,3 +14,4 @@ test:
 
 production:
   secret_key_base:
+  GOOGLE_ANALYTICS:

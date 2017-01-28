@@ -88,15 +88,7 @@
           raw("class=\"cur_url\"") : "" %>><%= t('.filterslink') %></a>
 
         <% if @user %>
-          <!-- Remove 'Messages' links -->
-          <!-- <% if (count = @user.unread_message_count) > 0 %>
-            <a href="/messages" class="new_messages <%= @cur_url == "/messages" ?
-              "cur_url" : "" %>"><%= t(".newmessagelink", :count => count)
-              %></a>
-          <% else %>
-            <a href="/messages" <%= @cur_url == "/messages" ?
-              raw("class=\"cur_url\"") : "" %>><%= t('.messageslink') %></a>
-          <% end %> -->
+          <!-- Remove 'Messages' link code -->
 
           <a href="/settings" <%= @cur_url == "/settings" ?
             raw("class=\"cur_url\"") : "" %>><%= @user.username %>
@@ -136,21 +128,18 @@
           <a href="/invitations"><%= t('.invitationqueuelink') %>(<%= iqc %>)</a>
         <% end %>
 
-        <!-- Remove 'Hats' -->
-        <!-- <% if @user && @user.is_moderator? &&
-        (hrc = HatRequest.count) > 0 %>
-          <a href="/hats/requests"><%= t('.hatrequestlink') %> (<%= hrc %>)</a>
-        <% else %>
-          <a href="/hats"><%= t('.hatslink') %></a>
-        <% end %> -->
+        <!-- Remove 'Hats' code -->
 
-        <!-- Remove 'Chat' & 'Privacy' link -->
-        <!-- <a href="/chat"><%= t('.chatlink') %></a> -->
-        <!-- <a href="/privacy"><%= t('.privacylink') %></a> -->
+        <!-- Remove 'Chat' & 'Privacy' links -->
+
         <a href="/about"><%= t('.aboutlink') %></a>
       </div>
       <div class="clear"></div>
     </div>
   </div>
+
+  <!-- Add google analytics -->
+  <%= render :partial => 'layouts/google_analytics' %>
+
 </body>
 </html>
