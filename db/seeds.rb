@@ -26,9 +26,10 @@ puts "created user: test, password: test"
 # Tag.create(tag: "positive hotness", description: "positive hotness tag", hotness_mod: 1)
 # Tag.create(tag: "show", description: "show tag")
 
-Tag.create(tag: "ask", description: "Ask fellow PL Weekly members your questions", hotness_mod: 0.25)
+Tag.create(tag: "ask", description: "Ask PL Weekly members your questions", hotness_mod: 0.25)
 Tag.create(tag: "show", description: "Show PL Weekly what you've been up to", hotness_mod: 0.5)
 Tag.create(tag: "meta", description: "Talk about PL Weekly web app & newsletter", hotness_mod: -0.25)
+Tag.create(tag: "fun", description: "Fun stuff from around the web")
 
 Tag.create(tag: "channels", description: "Other eCommerce sales channels")
 Tag.create(tag: "amazon", description: "Amazon sales channel")
@@ -56,6 +57,10 @@ Tag.create(tag: "reviews", description: "Reviews and customer feedback systems")
 Tag.create(tag: "legal", description: "Legal resources and challenges")
 Tag.create(tag: "finance", description: "Financial and accounting info")
 Tag.create(tag: "software", description: "Software tools and services")
+Tag.create(tag: "strategy", description: "Business strategy and planning")
+Tag.create(tag: "fun", description: "Fun stuff from around the web")
+Tag.create(tag: "event", description: "eCommerce events and conventions")
+Tag.create(tag: "attitude", description: "Maintain a strong mental attitude despite setbacks")
 
 puts "created tags"
 
