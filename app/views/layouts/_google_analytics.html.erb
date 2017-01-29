@@ -2,7 +2,7 @@
 
   var _gaq = _gaq || [];
   // Interpolate GOOGLE_ANALYTICS ENV variable to deconflict prod vs staging
-  _gaq.push(['_setAccount', '<%= ENV['GOOGLE_ANALYTICS'] %>' ]);
+  _gaq.push(['_setAccount', '<%= ENV['GOOGLE_ANALYTICS'] %>']);
   _gaq.push(['_trackPageview']);
 
   (function() {
