@@ -1,7 +1,7 @@
 class << Rails.application
 
   def domain
-    "privatelabelweekly.com"
+    "app.privatelabelweekly.com"
   end
 
   def name
